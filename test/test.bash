@@ -1,4 +1,4 @@
-#!/bin/bash -xv
+#!/bin/bash
 
 dir=~
 [ "$1" != "" ] && dir="$1"
@@ -6,9 +6,9 @@ dir=~
 cd $dir/ros2_ws
 colcon build
 source $dir/.bashrc
-timeout 20 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log
-now=$(date +%H%M%S)
-now=$((now - 10))
+timeout 5 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log
+now=$(date +%S)
+now=$((now - 2))
 
 cat /tmp/mypkg.log |
 grep "${now}"
