@@ -15,7 +15,8 @@ def cb():
     msg.data = n
     pub.publish(msg)
     dt_now = datetime.datetime.now()
-    n = dt_now.second
+    n = dt_now.minute * 100
+    n += dt_now.second
 
 
 def main():
