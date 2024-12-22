@@ -6,9 +6,9 @@ dir=~
 cd $dir/ros2_ws
 colcon build
 source $dir/.bashrc
-timeout 5 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log
-now=$(date +%M%S)
-now=$((now - 2))
+timeout 10 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log
+now=$(date +%H%M%S)
+now=$((now - 5))
 
 cat /tmp/mypkg.log |
 grep "${now}"
