@@ -16,9 +16,9 @@ class Talker(Node):
         msg = Int32()
         msg.data = self.n
         self.pub.publish(msg)
-        japan_tz = pytz.timezone('Asia/Tokyo')
-        now = datetime.datetime.now(japan_tz)
-        self.n = int(now.strftime('%H%M%S'))
+        jptz = pytz.timezone('Asia/Tokyo')
+        nowtime = datetime.datetime.now(jptz)
+        self.n = int(nowtime.strftime('%H%M%S'))
 
 
 def main():
