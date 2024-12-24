@@ -1,4 +1,5 @@
 import datetime
+import pytz
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int32
@@ -15,10 +16,9 @@ class Talker(Node):
         msg = Int32()
         msg.data = self.n
         self.pub.publish(msg)
-        now = datetime.datetime.now()
-        self.n = now.hour * 10000
-        self.n += now.minute * 100
-        self.n += now.second
+        japan_tz = pytz.timezone('Asia/Tokyo')
+        now = datetime.datetime.now(japan_tz)
+        self.n = int(now.strftime('%H%M%S'))
 
 
 def main():
