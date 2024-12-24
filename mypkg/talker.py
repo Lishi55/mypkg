@@ -16,8 +16,9 @@ class Talker(Node):
         msg.data = self.n
         self.pub.publish(msg)
         now = datetime.datetime.now()
-        self.n = now.hour * 100
-        self.n += now.minute
+        self.n = now.hour * 10000
+        self.n += now.minute * 100
+        self.n += now.second
 
 
 def main():

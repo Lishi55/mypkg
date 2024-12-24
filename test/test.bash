@@ -7,7 +7,7 @@ cd $dir/ros2_ws
 colcon build
 source $dir/.bashrc
 timeout 5 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log
-now=$(date +%H%M)
+now=$(TZ='Asia/Tokyo' date +%H%M%S)
 now=$((now))
 
 cat /tmp/mypkg.log |
