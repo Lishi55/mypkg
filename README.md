@@ -34,6 +34,7 @@ data: 194353
 - Python
   - テスト環境　Ubuntu 22.04 LTS
   - テスト済みバージョン: 3.10
+  - テストで利用したコンテナhttps://hub.docker.com/repository/docker/ryuichiueda/ubuntu22.04-ros2
 
 ## ライセンス
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます.
