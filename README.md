@@ -4,9 +4,36 @@
 ## 概要
 - 日本の現在時刻(時分秒)を出力送信
 
+## 使用例
+
+- 現在を19時43分程とする<br>
+- 送信側
+```bash
+$ ros2 run mypkg talker
+```
+- 受信側
+```bash
+$ ros2 topic echo /nowtime
+data: 194349
+---
+data: 194350
+---
+data: 194351
+---
+data: 194352
+---
+data: 194353
+---
+```
+
+- 実際の画像
+![image](https://github.com/user-attachments/assets/af5bd492-e137-48e0-ba7a-fb67c9f25f62)
+
+
 ## 必要なソフトウェア
 - Python
   - テスト環境　Ubuntu 22.04 LTS
+  - テスト済みバージョン: 3.10
 
 ## ライセンス
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます.
