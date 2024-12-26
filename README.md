@@ -2,7 +2,7 @@
 ![test](https://github.com/Lishi55/Ros2_demo/actions/workflows/test.yml/badge.svg)
 
 ## 概要
-- 日本の現在時刻(時分秒)を出力送信
+- 日本(東京)の現在時刻(時分秒)を出力送信
 
 ## 使用例
 
@@ -26,7 +26,7 @@ data: 194353
 ---
 ```
 
-- 実際の画像
+- 実行例の画像
 ![image](https://github.com/user-attachments/assets/af5bd492-e137-48e0-ba7a-fb67c9f25f62)
 
 
