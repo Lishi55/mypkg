@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2024 Satoshi Nemoto miraiprj3104@icloud.com
+# SPDX-License-Identifier: BSD-3-Clause
 import datetime
 import pytz
 import rclpy
@@ -8,7 +10,7 @@ from std_msgs.msg import Int32
 class Talker(Node):
     def __init__(self):
         super().__init__("talker")
-        self.pub = self.create_publisher(Int32, "countup", 10)
+        self.pub = self.create_publisher(Int32, "nowtime", 10)
         self.create_timer(1, self.cb)
         self.n = 0
 
