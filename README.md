@@ -4,9 +4,19 @@
 ## 概要
 - 日本(東京)の現在時刻(時分秒)を出力送信
 
+## Node
+- sendtime.py
+  現在時刻の取得、送信
+- listener.py
+  テスト用
+
+## Topic
+- nowtime
+  現在時刻の表示
+
 ## 使用例
 
-- 現在を19時43分の時　実行<br>
+- 19時43分　実行<br>
 - 送信側
 ```bash
 $ ros2 run mypkg talker
