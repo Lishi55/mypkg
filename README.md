@@ -5,7 +5,7 @@
 - 日本(東京)の現在時刻(時分秒)を出力送信
 
 ## Node
-- sendtime.py<br>
+- sendtime<br>
   日本(東京)の現在時刻を時分秒で1秒ごとに取得、送信
 - listener.py<br>
   テスト用
@@ -19,7 +19,7 @@
 - 19時43分48秒　実行の場合<br>
 - 送信側
 ```bash
-$ ros2 run mypkg talker
+$ ros2 run mypkg sendtime
 ```
 - 受信側
 ```bash
