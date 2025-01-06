@@ -5,9 +5,9 @@
 - 日本(東京)の現在時刻(時分秒)を出力送信
 
 ## Node
-- sendtime.py
+- sendtime.py<br>
   現在時刻の取得、送信
-- listener.py
+- listener.py<br>
   テスト用
 
 ## Topic
@@ -42,7 +42,8 @@ data: 194353
 
 ## 必要なソフトウェア
 - Python
-  - テスト環境　Ubuntu 22.04 LTS
+  - テスト環境　Ubuntu 22.04 LTS<br>
+                ROS 2 humble
   - テスト済みバージョン: 3.10
   - テストで利用したコンテナhttps://hub.docker.com/repository/docker/ryuichiueda/ubuntu22.04-ros2
 
