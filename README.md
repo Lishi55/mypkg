@@ -6,17 +6,17 @@
 
 ## Node
 - sendtime.py<br>
-  現在時刻の取得、送信
+  日本(東京)の現在時刻を時分秒で1秒ごとに取得、送信
 - listener.py<br>
   テスト用
 
 ## Topic
-- nowtime
-  現在時刻の表示
+- nowtime<br>
+  送信された現在時刻の表示
 
 ## 使用例
 
-- 19時43分　実行<br>
+- 19時43分48秒　実行の場合<br>
 - 送信側
 ```bash
 $ ros2 run mypkg talker
@@ -42,7 +42,8 @@ data: 194353
 
 ## 必要なソフトウェア
 - Python
-  - テスト環境　Ubuntu 22.04 LTS<br>
+  - テスト環境　<br>
+                Ubuntu 22.04 LTS<br>
                 ROS 2 humble
   - テスト済みバージョン: 3.10
   - テストで利用したコンテナhttps://hub.docker.com/repository/docker/ryuichiueda/ubuntu22.04-ros2
