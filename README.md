@@ -5,14 +5,14 @@
 - 日本(東京)の現在時刻(時分秒)を出力送信
 
 ## Node
-- sendtime<br>
+- sendtime.py<br>
   日本(東京)の現在時刻を時分秒で1秒ごとに取得、送信
 - listener.py<br>
   テスト用
 
 ## Topic
 - nowtime<br>
-  送信された現在時刻の表示
+  現在時刻が送信されている
 
 ## 使用例
 
